@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>File Loader</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit-icons.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="padding: 0;">
+
+<div class="js-upload uk-placeholder uk-text-center">
+    <span uk-icon="icon: cloud-upload"></span>
+    <span class="uk-text-middle">Drop your files here or</span>
+    <div uk-form-custom>
+        <input type="file" multiple>
+        <span class="uk-link">selecting one</span>
+    </div>
+</div>
+<progress id="js-progressbar" class="uk-progress CenteredItems" value="0" max="100" hidden></progress>
+<div id="downloadList" class="CenteredItems" style="overflow: auto; overflow-x: hidden; height: 350px;">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
